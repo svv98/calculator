@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Calculator;
+    src: url('Calculator.ttf');
+}
+.calculator{
+    border: 5px solid rgba(227, 144, 172, 0.657);
+    background-color: rgb(246, 174, 198);
+    border-radius: 50px;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 20px;
+}
+.display{
+    border: 5px solid rgb(227, 144, 172);
+    background-color: rgb(191, 185, 185);
+    border-radius: 30px;
+    height: 85px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display #text{
+    width: 100%;
+    height: 85px;
+    text-align: right;
+    font-size: 65px; 
+    font-family: Calculator;
+    margin: 0;
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 5px;
+    width: auto;
+    height: 400px;
+    justify-content: center;
+}
+button{
+    height: 73px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Roboto;
+}
+button:focus {
+  outline: none;
+}
+button#multi{
+    font-size: 25px;
+}
+.row1.negative{
+    background-color: rgb(244, 217, 128);
+    border: 1px solid rgb(224, 195, 100);
+    color: rgb(153, 120, 13);
+    font-size: 30px;
+}
+.row1.negative:hover{
+    background-color: rgb(244, 214, 115);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.row1{
+    background-color: rgb(237, 240, 143);
+    border: 1px solid rgb(211, 216, 64);
+    color: rgb(129, 133, 7);
+    font-size: 27px;
+}
+.row1:hover{
+    background-color: rgb(241, 245, 128);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.row2{
+    background-color: rgb(188, 233, 142);
+    border: 1px solid rgb(174, 223, 125);
+    color: rgb(53, 100, 6);
+}
+.row2:hover{
+    background-color: rgb(174, 223, 125);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.row3{
+    background-color: rgb(174, 238, 246);
+    border: 1px solid rgb(148, 228, 239);
+    color: rgb(18, 112, 124);
+}
+.row3:hover{
+    background-color: rgb(148, 228, 239);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.row4{
+    background-color: rgb(249, 163, 178);
+    border: 1px solid rgba(255, 152, 169, 0.494);
+    color: rgb(126, 18, 36);
+}
+.row4:hover{
+    background-color: rgb(255, 152, 169);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.row5{
+    background-color: rgb(208, 165, 208);
+    border: 1px solid rgba(199, 158, 199, 0.324);
+    color: rgb(122, 37, 122);
+}
+.row5:hover{
+    background-color: rgb(199, 158, 199);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+#decimal.active{
+    background-color: rgb(199, 158, 199);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.op-btn{
+    background-color: rgb(255, 205, 135);
+    border: 1px solid rgb(243, 193, 122);
+    color: rgb(156, 100, 23);
+}
+.op-btn:hover{
+    background-color: rgb(243, 193, 122);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+.operators .active{
+    background-color: rgb(243, 193, 122);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+#equal{
+    aspect-ratio: 2.274/1;
+    background-color: rgb(245, 139, 134);
+    border: 1px solid rgba(235, 120, 114, 0.281);
+    color: rgb(138, 15, 8);
+}
+#equal:hover{
+    background-color: rgb(235, 120, 114);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.left .num{
+    flex-wrap: wrap;
+}
+.operators{
+    display: flex;
+    flex-direction: column;
+}

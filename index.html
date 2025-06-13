@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
-    
+    <div class="calculator">
+        <div class="display">
+                <p id="text"></p>
+        </div>
+        <div class="buttons">
+            <div class="left">
+                <div class="extra-btn">
+                    <button class="clear row1">AC</button>
+                    <button class="del row1">DEL</button>
+                    <button class="negative row1">+/-</button>
+                </div>
+                <div class="num">
+                    <button class="row2 numB">7</button>
+                    <button class="row2 numB">8</button>
+                    <button class="row2 numB">9</button>
+                    <button class="row3 numB">4</button>
+                    <button class="row3 numB">5</button>
+                    <button class="row3 numB">6</button>
+                    <button class="row4 numB">1</button>
+                    <button class="row4 numB">2</button>
+                    <button class="row4 numB">3</button>                    
+                </div>
+            </div>
+            <div class="operators">
+                <button id="add" class="op-btn">+</button>
+                <button id="subs" class="op-btn">-</button>
+                <button id="multi" class="op-btn">x</button>
+                <button id="divi" class="op-btn">÷</button>                 
+            </div>                
+        </div>
+        <div class="bottom-btn">
+            <button class="row5 numB">0</button>
+            <button id='decimal' class="row5">.</button>
+            <button id="equal">=</button>   
+        </div>
+    </div>
+
     <script src="javascript.js" defer></script>
 </body>
 </html>
